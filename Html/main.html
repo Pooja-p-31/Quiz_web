@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Clickable Boxes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<!-- <body class="bg-[url('/img/a.jpg')] bg-cover bg-center h-screen bg-no-repeat"> -->
+    <body style="background-image: url('/img/back1.png');" class="bg-cover bg-center h-screen bg-no-repeat">
+
+    <div class="flex justify-center items-center h-screen">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Box 1 -->
+            <div class="bg-blue-500 p-8 rounded-lg text-white text-center cursor-pointer" onclick="boxClicked(1)">
+                <p class="text-2xl font-bold">Science</p>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="bg-green-500 p-8 rounded-lg text-white text-center cursor-pointer" onclick="boxClicked(2)">
+                <p class="text-2xl font-bold">Computer</p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="bg-yellow-500 p-8 rounded-lg text-white text-center cursor-pointer" onclick="boxClicked(3)">
+                <p class="text-2xl font-bold">History</p>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="bg-black p-8 rounded-lg text-white text-center cursor-pointer" onclick="boxClicked(4)">
+                <p class="text-2xl font-bold">Maths</p>
+            </div>
+
+            <!-- Box 5 -->
+            <div class="bg-red-500 p-8 rounded-lg text-white text-center cursor-pointer" onclick="boxClicked(5)">
+                <p class="text-2xl font-bold">GK</p>
+            </div>
+
+            <!-- Box 6 -->
+            <div class="bg-purple-500 p-8 rounded-lg text-white text-center cursor-pointer" onclick="boxClicked(6)">
+                <p class="text-2xl font-bold">Grammar</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function boxClicked(boxNumber) {
+            document.getElementById('Hello Welcome to Quizz World').style.display = 'flex';
+            // alert("Box " + boxNumber + " clicked!");
+            // Add your custom logic or redirection here
+        }
+    </script>
+    <script>
+        function boxClicked(boxNumber) {
+            // Define the URLs for the corresponding pages
+            const pageUrls = [
+                // Science
+                'index.html',
+                // Computer
+                'start.html',   
+                // History
+                'start.html',
+                // Maths
+                'maths.html',
+                // GK
+                'page5.html',
+                // Grammar
+                'page6.html'
+            ];
+
+            // Get the URL for the clicked box
+            const url = pageUrls[boxNumber - 1];
+
+            // Redirect to the specified page
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>

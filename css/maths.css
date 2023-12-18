@@ -1,0 +1,96 @@
+.main-div{
+    background-color: lightblue;
+    display:grid;
+    place-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.inner-div {
+    background-color: white;
+    width: 40vw;
+    border-radius: 1rem;
+    padding: 3rem 8rem;
+    box-shadow: 0 1rem 1rem color(0 0 0)
+}
+
+.inner-div h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 1rem 0 4rem 0;
+    font-style: normal;
+}
+
+.inner-div li {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 30;
+}
+
+input {
+    cursor: pointer;
+}
+
+#submit, .btn{
+    padding: 1rem 3rem;
+    outline: none;
+    background-color: blue;
+    color: white;
+    display: block;
+    font-size: 2rem;
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#prev, .btn{
+    margin: 1px;;
+    background-color: lightsalmon;
+    /* background-color: ; */
+    color: #fff;
+    display:inline-block;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    text-transform:capitalize;
+    text-align: left;
+}
+#showScore{
+    background-color: #dfe6e9;
+    margin-top: 3rem;
+    padding: 4rem 7rem;
+    box-shadow: 0 1rem 1rem -0.7 rgba(0, 0, 0, 0.4);
+}
+
+#showScore h3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#showScore .btn {
+    margin-top: 2rem;
+    background-color: #55efc4;
+    color: #2d3436;
+}
+#showScore .btn {
+    background-color: #00b894;
+    color: #fff;
+}
+.scoreArea {
+    display: none;
+}
+
+#submit:hover {
+    background-color:lightseagreen;
+}
+#prev:hover {
+    background-color: black;
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Test Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-l from-blue-500 via-green-400 to-red-400 h-screen flex justify-center items-center">
+    <div class="absolute inset-0 bg-white opacity-70 z-0"></div> 
+    <!-- Semi-transparent background -->
+    <div class="relative z-10 bg-opacity-90 bg-white p-8 rounded-lg shadow-lg w-96">
+        <h1 class="text-3xl font-semibold mb-4 text-center text-purple-600">IQ Test Login</h1>
+        <form action="#" method="post">
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input type="email" id="email" name="email" class="w-full py-2 px-3 bg-gray-100 rounded-md focus:outline-none focus:ring focus:ring-blue-300 text-gray-800" required>
+            </div>
+
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" name="password" class="w-full py-2 px-3 bg-gray-100 rounded-md focus:outline-none focus:ring focus:ring-blue-300 text-gray-800" required>
+            </div>
+
+            <div class="mb-6">
+                <button type="submit" class="w-full bg-gradient-to-r from-purple-400 to-purple-600 text-white font-semibold py-2 rounded-md hover:from-purple-700">Login</button>
+            </div>
+        </form>
+
+        <div class="text-center text-sm">
+            <p>Don't have an account? <a href="#" class="text-purple-600 hover:underline">Register</a></p>
+        </div>
+    </div>
+</body>
+</html>
